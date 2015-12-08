@@ -1,0 +1,5 @@
+**For Updating File**
+git add <file name>
+git commit -m "commit name"
+git pull --rebase origin master
+git push origin master

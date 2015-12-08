@@ -1,0 +1,157 @@
+haziz@H4Z1Z:~$ ls
+Desktop    Downloads  Pictures  Templates  VirtualBox VMs     WebstormProjects
+Documents  Music      Public    Videos     WebStorm-141.1550
+haziz@H4Z1Z:~$ cd git
+haziz@H4Z1Z:~/git$ mkdir mywebsitetool
+haziz@H4Z1Z:~/git$ ls
+mywebsitetool
+haziz@H4Z1Z:~/git$ cd mywebsitetool
+haziz@H4Z1Z:~/git/mywebsitetool$ ls
+haziz@H4Z1Z:~/git/mywebsitetool$ git init
+Initialized empty Git repository in /home/haziz/git/mywebsitetool/.git/
+haziz@H4Z1Z:~/git/mywebsitetool$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.idea/
+
+haziz@H4Z1Z:~/git/mywebsitetool$ git log
+fatal: bad default revision 'HEAD'
+haziz@H4Z1Z:~/git/mywebsitetool$ git commit -m "My First Commit"
+[master (root-commit) b1cce6b] My First Commit
+ Committer: Haziz Feroz Khan <haziz@localhost.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 10 insertions(+)
+ create mode 100644 index.html
+haziz@H4Z1Z:~/git/mywebsitetool$ git log
+commit b1cce6b5ea95be23134a2cdb3433291348b51df8
+Author: Haziz Feroz Khan <haziz@localhost.localdomain>
+Date:   Sun Dec 6 13:18:46 2015 +0500
+
+    My First Commit
+haziz@H4Z1Z:~/git/mywebsitetool$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   second.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   second.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.idea/
+
+haziz@H4Z1Z:~/git/mywebsitetool$ git log
+commit b1cce6b5ea95be23134a2cdb3433291348b51df8
+Author: Haziz Feroz Khan <haziz@localhost.localdomain>
+Date:   Sun Dec 6 13:18:46 2015 +0500
+
+    My First Commit
+haziz@H4Z1Z:~/git/mywebsitetool$ git commit -m "My second Commit"
+[master 132360d] My second Commit
+ Committer: Haziz Feroz Khan <haziz@localhost.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 10 insertions(+)
+ create mode 100644 second.html
+haziz@H4Z1Z:~/git/mywebsitetool$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   second.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.idea/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+haziz@H4Z1Z:~/git/mywebsitetool$ git log
+commit 132360d0becb5d281270f21b68bd8b769331a53d
+Author: Haziz Feroz Khan <haziz@localhost.localdomain>
+Date:   Sun Dec 6 13:26:16 2015 +0500
+
+    My second Commit
+
+commit b1cce6b5ea95be23134a2cdb3433291348b51df8
+Author: Haziz Feroz Khan <haziz@localhost.localdomain>
+Date:   Sun Dec 6 13:18:46 2015 +0500
+
+    My First Commit
+haziz@H4Z1Z:~/git/mywebsitetool$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   second.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.idea/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+haziz@H4Z1Z:~/git/mywebsitetool$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+haziz@H4Z1Z:~/git/mywebsitetool$ git add second.html
+haziz@H4Z1Z:~/git/mywebsitetool$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   second.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.idea/
+
+haziz@H4Z1Z:~/git/mywebsitetool$ 
+
